@@ -3,5 +3,6 @@ response = str.lower(input("say something quietly: "))
 print(response)
 
 #playback speed
-dotDotDot = str(input("enter three words: ")).split(" ","...")
-print(dotDotDot)
+words  = input("enter three words: ")
+wordsNew = words.replace(" ","...")
+print(wordsNew)
