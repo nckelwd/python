@@ -14,9 +14,9 @@ transport = Transport(timeout=10)
 client = Client(url, wsse=UsernameToken(user, password),transport=transport)
 
 request_dict = {
-    'Worker_Reference': {
-        'ID': {
-            'type': 'Employee_ID',
+    'Worker_Data': {
+        'Worker_ID': {
+            'type': 'string',
             '_value_1': employee_id
         },
         'Descriptor' : None
