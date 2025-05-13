@@ -50,9 +50,7 @@ parsed_response = json.dumps(parse(response.content))
 #     print()
 
 print (response.json)
-# print (parsed_response)
 
-# exportPhotoFromWorkday()
 
 
 # <wd:Include_Photo>true</wd:Include_Photo>

@@ -30,7 +30,7 @@ request_body = f"""<xsd:Envelope xmlns:xsd="http://schemas.xmlsoap.org/soap/enve
     </wd:Request_References>
     <wd:Response_Group>
         <wd:Include_Reference>true</wd:Include_Reference>
-
+        <wd:Include_Photo>true</wd:Include_Photo>
     </wd:Response_Group>
     </wd:Get_Workers_Request>
 </env:Body>
@@ -43,16 +43,6 @@ response = requests.request(method="POST", url=url, headers=headers, data=reques
 response.json
 parsed_response = json.dumps(parse(response.content))
 
-# photoInfo = json.loads(parsed_response)
-
-# for n in photoInfo:
-#     print("Name",n["Worker_Descriptor"])
-#     print()
-
-print (response.json)
-# print (parsed_response)
-
-# exportPhotoFromWorkday()
-
+print (parsed_response)
 
 # <wd:Include_Photo>true</wd:Include_Photo>
